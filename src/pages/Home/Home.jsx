@@ -12,8 +12,8 @@ function Home() {
         {/* Tarjetas */}
       </div>
       <div className="container">
-        <div className="row g-3">
-          <div className="col-12 col-sm-4 col-md-3 col-lg-2">
+        <div className="row g-3 ">
+          <div className="col-12 col-sm-8 col-md-6 col-lg-4">
             <div className="card h-100">
               <div className="card-body d-flex flex-column">
                 <h5 className="card-title">Nombre</h5>
