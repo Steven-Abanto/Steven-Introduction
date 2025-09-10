@@ -1,0 +1,68 @@
+:root { --navbar-h: 64px; }
+
+/*   Cabecera   */
+
+.navbar {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  background-color: #3a09a3de;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  height: var(--navbar-h);
+  padding: 0;
+  align-items: center;
+}
+
+.navbar-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: white;
+  flex-shrink: 0;
+}
+
+.navbar-links a {
+  margin-left: 1rem;
+  color: white;
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.navbar-links a:hover {
+  text-decoration: underline;
+}
+
+
+/* Background */
+
+.bg-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit:cover; /* Cubre todo el contenedor */ 
+  z-index: -1; /* Detrás del contenido */
+  pointer-events: none; /* No interfiere con interacciones */
+  filter: brightness(0.8); /* Oscurece el video para mejorar legibilidad */
+}
+
+.home-container::before{
+  content:"";
+  inset:-1px 0 -1px 0;     
+  z-index:0;
+}
